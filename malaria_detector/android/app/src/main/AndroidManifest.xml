@@ -1,4 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- এখানে পারমিশনগুলো যোগ করুন -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- Android 10 (API 29) এবং এর পরের জন্য READ_EXTERNAL_STORAGE যথেষ্ট -->
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
     <application
         android:label="malaria_detector"
         android:name="${applicationName}"
